@@ -1,0 +1,14 @@
+<strong><p>@Input - (pai para filho)</p></strong>
+<p>renderizando dados do componente pai (app.component) no componente filho (produtos.component)</p>
+<table border="1">
+  <tr *ngFor="let p of produtos">
+    <td>{{p}}</td>
+  </tr>
+</table>
+<hr>
+<strong><p>@Output - (filho para pai)</p></strong>
+<p>adicionando dados no componente pai (app.component) diante do componente filho (produtos.component)</p>
+<input type="text" id="produto" placeholder="digite..." #novoProduto>
+<button type="button" (click)="addNovoProduto(novoProduto.value)">adicionar</button>
+<hr>
+

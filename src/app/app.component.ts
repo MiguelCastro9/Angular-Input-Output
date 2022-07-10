@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-input-output';
+
+  listaProdutos: string[] = ['Teclado', 'Mouse', 'Monitor', 'Headset'];
+
+  addProdutos(novoProduto: string) {
+    this.listaProdutos.push(novoProduto);
+  }
 }
